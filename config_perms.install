@@ -103,7 +103,8 @@ function _config_perms_install_data() {
     'Display site building menu' => array('admin/structure'),
     'Display site configuration menu' => array('admin/config'),
     'Display admin index' => array('admin/index'),
-    'Administer Insight' => array('admin/config/services/insight'),
+    'Administer insight' => array('admin/config/services/insight'),
+    'Administer fileo-types' => array('admin/structure/file-types'),
   );
 
   foreach ($perms as $name => $paths) {
