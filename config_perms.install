@@ -133,6 +133,7 @@ function _config_perms_install_data() {
     'Disable Messages Configuration' => array('admin/config/development/disable-messages'),
     'Strongarm Configuration' => array('admin/config/development/strongarm'),
     'Tadaa Configuration' => array('admin/config/development/tadaa'),
+    'Block Structure' => array('admin/structure/block', 'admin/structure/block/list/*'),
   );
 
   foreach ($perms as $name => $paths) {
