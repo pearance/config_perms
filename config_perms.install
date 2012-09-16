@@ -135,6 +135,7 @@ function _config_perms_install_data() {
     'Tadaa Configuration' => array('admin/config/development/tadaa'),
     'Live CSS Configuration' => array('admin/config/development/live_css'),
     'Webform Components' => array('node/*/webform', 'node/1/webform/configure'),
+    'Context Configuration' => array('node/*/admin/structure/context/settings'),
   );
 
   foreach ($perms as $name => $paths) {
