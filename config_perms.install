@@ -136,6 +136,10 @@ function _config_perms_install_data() {
     'Live CSS Configuration' => array('admin/config/development/live_css'),
     'Webform Components' => array('node/*/webform', 'node/1/webform/configure'),
     'Context Configuration' => array('node/*/admin/structure/context/settings'),
+    'Content Lock Global' => array('admin/content/content_lock'),
+    'Database Log' => array('admin/reports/dblog'),
+    'Top Access Denied' => array('admin/reports/access-denied'),
+    'Top Page not Found' => array('admin/reports/page-not-found'),
   );
 
   foreach ($perms as $name => $paths) {
