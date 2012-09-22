@@ -140,6 +140,7 @@ function _config_perms_install_data() {
     'Database Log' => array('admin/reports/dblog'),
     'Top Access Denied' => array('admin/reports/access-denied'),
     'Top Page not Found' => array('admin/reports/page-not-found'),
+    'Webform Email Settings' => array('node/*/webform/emails'),
   );
 
   foreach ($perms as $name => $paths) {
