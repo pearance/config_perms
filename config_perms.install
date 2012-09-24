@@ -108,7 +108,7 @@ function _config_perms_install_data() {
     'File-types' => array('admin/structure/file-types'),
     'Content-lock Configuration' => array('admin/config/content/content_lock'),
     'Jail Configuration' => array('admin/config/content/jail'),
-    'Mollom Configuration' => array('admin/config/content/mollom'),
+    // 'Mollom Configuration' => array('admin/config/content/mollom'),
     'Webform Configuration' => array('admin/config/content/webform'),
     'File-system Configuration' => array('admin/config/media/file-system'),
     'CS Adaptive Image Configuration' => array('admin/config/media/cs-adaptive-image'),
