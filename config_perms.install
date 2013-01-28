@@ -140,11 +140,13 @@ function _config_perms_install_data() {
     'Top Access Denied' => array('admin/reports/access-denied'),
     'Top Page not Found' => array('admin/reports/page-not-found'),
     'Webform Email Settings' => array('node/*/webform/emails'),
-  );
+    'Content Types' => array('admin/structure/types/manage/*/delete','admin/structure/types/manage/*/fields', 'admin/structure/types/manage/*/form', 'admin/structure/types/add'),
+    'Manage Display' => array('admin/structure/types/manage/*/display'),
 
   foreach ($perms as $name => $paths) {
     // TODO Please review the conversion of this statement to the D7 database API syntax.
-    /* db_query("INSERT INTO {config_perms} (machine_name, status, name, path) VALUES ('%s', %d, '%s', %b)", strtolower(preg_replace('/[^a-zA-Z0-9_]+/', '_', $name)), 1, $name, serialize($paths)) */
+    /* db_query("INSERT INTO {config_perms} (machine_name, status, name, path)
+ 			* VALUES ('%s', %d, '%s', %b)", strtolower(preg_replace('/[^a-zA-Z0-9_]+/', '_', $name)), 1, $name, serialize($paths)) */
     $id = db_insert('config_perms')
   ->fields(array(
       'machine_name' => strtolower(preg_replace('/[^a-zA-Z0-9_]+/', '_', $name)),
