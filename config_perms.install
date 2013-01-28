@@ -142,6 +142,7 @@ function _config_perms_install_data() {
     'Webform Email Settings' => array('node/*/webform/emails'),
     'Content Types' => array('admin/structure/types/manage/*/delete','admin/structure/types/manage/*/fields', 'admin/structure/types/manage/*/form', 'admin/structure/types/add'),
     'Manage Display' => array('admin/structure/types/manage/*/display'),
+	);
 
   foreach ($perms as $name => $paths) {
     // TODO Please review the conversion of this statement to the D7 database API syntax.
